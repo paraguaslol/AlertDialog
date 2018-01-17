@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBaseline="@+id/tw_color2"
+        tools:context="com.example.victor.alertdialog.MainActivity">
+
+        <Button
+            android:id="@+id/bt_data"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="52dp"
+            android:text="Tria una data"
+            tools:layout_editor_absoluteX="147dp"
+            tools:layout_editor_absoluteY="55dp" />
+
+    <Button
+        android:id="@+id/bt_hora"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bt_data"
+        android:layout_below="@+id/bt_data"
+        android:layout_marginTop="25dp"
+        android:text="Tria una hora"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <Button
+        android:id="@+id/bt_color"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_hora"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="Tria un color" />
+
+        <TextView
+            android:id="@+id/tw_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tw_data2"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="37dp"
+            android:layout_toRightOf="@+id/tw_data2" />
+
+        <TextView
+            android:id="@+id/tw_hora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tw_data"
+            android:layout_below="@+id/tw_data"
+            android:layout_marginTop="24dp"
+            android:layout_toRightOf="@+id/tw_hora2" />
+
+    <TextView
+        android:id="@+id/tw_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tw_color2"
+        android:layout_alignLeft="@+id/tw_hora"
+        android:layout_below="@+id/tw_hora"
+        android:layout_marginTop="27dp"
+        android:layout_toRightOf="@+id/tw_color2" />
+
+    <TextView
+        android:id="@+id/tw_data2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="300dp"
+        android:text="Data seleccionada:" />
+
+    <TextView
+        android:id="@+id/tw_hora2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tw_data2"
+        android:layout_below="@+id/tw_data2"
+        android:layout_marginTop="20dp"
+        android:text="Hora seleccionada:" />
+
+    <TextView
+        android:id="@+id/tw_color2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tw_hora2"
+        android:layout_below="@+id/tw_hora2"
+        android:layout_marginTop="21dp"
+        android:text="Color seleccionat:" />
+    </RelativeLayout>
